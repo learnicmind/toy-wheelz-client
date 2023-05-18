@@ -1,36 +1,54 @@
-import logo from '../../assets/car.png'
+import { Link } from 'react-router-dom';
+import logo from '../../assets/car.png';
+import { FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow, FaPhoneAlt } from 'react-icons/fa';
 import React from 'react';
 
 const Footer = () => {
+
+    const navItems = <>
+        <Link className="font-bold" to='/'>Home</Link>
+        <Link className="font-bold" >All Toys</Link>
+        <Link className="font-bold" >Add a Toy</Link>
+        <Link className="font-bold" >Blogs</Link>
+    </>
+
     return (
-        <footer className="footer p-10  bg-black text-white">
-            <div>
-                <div>
-                    <img className='h-20 w-20' src={logo} alt="" />
+        <div className='bg-black text-white py-8 '>
+            <footer className="mx-auto md:w-[1300px] footer grid md:p-0 p-4 justify-between items-center ">
+                <div className=''>
+                    <img className='w-14 h-14' src={logo} alt="" />
+
+                    <button className="btn btn-ghost normal-case ">
+                        <span className='md:text-3xl text-gray-200 '>Toy </span> <span className="text-2xl md:text-2xl text-gray-300"> Wheelz</span>
+                    </button>
+                    <div className='mt-4'>
+                        <div className='flex items-center gap-2'>
+                            <FaLocationArrow className='text-slate-400'></FaLocationArrow>
+                            <p>Hill Street, Wangdu, USA</p>
+                        </div>
+                        <div className='flex text-lg items-center gap-2'>
+                            <FaPhoneAlt className='text-slate-400' />
+                            <p>+19983478494</p>
+                        </div>
+                    </div>
+                    <footer className="footer footer-center p-4 ">
+                        <div>
+                            <p>Copyright © 2023 - Toy Wheelz</p>
+                        </div>
+                    </footer>
                 </div>
-                <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
-            </div>
-            <div>
-                <span className="footer-title">Services</span>
-                <a className="link link-hover">Branding</a>
-                <a className="link link-hover">Design</a>
-                <a className="link link-hover">Marketing</a>
-                <a className="link link-hover">Advertisement</a>
-            </div>
-            <div>
-                <span className="footer-title">Company</span>
-                <a className="link link-hover">About us</a>
-                <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Jobs</a>
-                <a className="link link-hover">Press kit</a>
-            </div>
-            <div>
-                <span className="footer-title">Legal</span>
-                <a className="link link-hover">Terms of use</a>
-                <a className="link link-hover">Privacy policy</a>
-                <a className="link link-hover">Cookie policy</a>
-            </div>
-        </footer>
+                <div className=''>
+                    <span className="footer-title">Quick Links</span>
+                    {navItems}
+                </div>
+                <div className=''>
+                    <span className="footer-title">Social Links</span>
+                    <a className="link link-hover inline-flex items-center gap-2 text-lg font-semibold"> <FaFacebook />Facebook</a>
+                    <a className="link link-hover inline-flex items-center gap-2 text-lg font-semibold"><FaInstagram />Instagram</a>
+                    <a className="link link-hover inline-flex items-center gap-2 text-lg font-semibold"> <FaLinkedin />LinkedIn</a>
+                </div>
+            </footer>
+        </div>
     );
 };
 
