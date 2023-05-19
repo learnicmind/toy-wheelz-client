@@ -15,9 +15,9 @@ const Header = () => {
 
     const navItems = <>
         <li><Link className="text-lg font-bold" to='/'>Home</Link></li>
-        <li><Link className="text-lg font-bold" >All Toys</Link></li>
-        <li><Link className="text-lg font-bold" >My Toys</Link></li>
-        <li><Link className="text-lg font-bold" >Add a Toy</Link></li>
+        <li><Link to='/alltoys' className="text-lg font-bold" >All Toys</Link></li>
+        <li><Link to='/mytoys' className="text-lg font-bold" >My Toys</Link></li>
+        <li><Link to='/addtoy' className="text-lg font-bold" >Add a Toy</Link></li>
         <li><Link to='/blogs' className="text-lg font-bold" >Blogs</Link></li>
     </>
 
