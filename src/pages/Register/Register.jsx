@@ -20,6 +20,7 @@ const Register = () => {
         .then(result => {
             const user = result.user;
             console.log(user)
+            event.target.reset()
         })
         .catch(error => {
             console.log(error)
@@ -55,7 +56,7 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Photo Url</span>
                                 </label>
-                                <input name='photo' type="text" placeholder="email" className="input input-bordered" />
+                                <input name='photo' type="text" placeholder="Photo Url" className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">

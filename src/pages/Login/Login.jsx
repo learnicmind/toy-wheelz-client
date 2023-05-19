@@ -4,7 +4,7 @@ import { AuthContext } from '../../AuthProvider';
 
 const Login = () => {
 
-    const {signIn} = useContext(AuthContext)
+    const {signIn, handleGoogleSignIn} = useContext(AuthContext)
 
     const handleLogin = event => {
         event.preventDefault();
@@ -16,11 +16,17 @@ const Login = () => {
         signIn(email, password)
         .then(result => {
             const user = result.user;
-            console.log(user)
+            console.log(user);
+            event.target.reset()
         })
         .catch(error => {
             console.log(error)
         })
+    }
+
+    const handleGoogleIn = () => {
+        handleGoogleSignIn();
+
     }
 
 
@@ -62,7 +68,7 @@ const Login = () => {
                         <div>
                             <div className="divider">OR</div>
                             <div className='flex justify-center items-center'>
-                                <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png?w=740&t=st=1684515791~exp=1684516391~hmac=78bd410c2b0e36b23e2860af1bcecec28887f6d349d8a7c61999ca793088da6e" alt="" className='w-8 h-8 cursor-pointer' />
+                                <img onClick={handleGoogleIn} src="https://cdn-icons-png.flaticon.com/512/281/281764.png?w=740&t=st=1684515791~exp=1684516391~hmac=78bd410c2b0e36b23e2860af1bcecec28887f6d349d8a7c61999ca793088da6e" alt="" className='w-8 h-8 cursor-pointer' />
                             </div>
                         </div>
                     </div>
