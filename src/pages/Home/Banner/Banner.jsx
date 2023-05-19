@@ -2,36 +2,21 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div>
-            <div className="relative">
-                <div className="carousel">
-                    <div className="carousel-inner">
-                        <div className="carousel-item">
-                            <img src="car1.jpg" alt="Car 1" className="w-full h-auto" />
-                            <div className="carousel-overlay">
-                                <h2 className="text-4xl font-bold text-white">Welcome to Toy Wheelz</h2>
-                                <p className="text-xl text-white">Explore our collection of toy cars</p>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <img src="car2.jpg" alt="Car 2" className="w-full h-auto" />
-                            <div className="carousel-overlay">
-                                <h2 className="text-4xl font-bold text-white">Discover the Fun</h2>
-                                <p className="text-xl text-white">Experience the thrill of our toy cars</p>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <img src="car3.jpg" alt="Car 3" className="w-full h-auto" />
-                            <div className="carousel-overlay">
-                                <h2 className="text-4xl font-bold text-white">Start Your Adventure</h2>
-                                <p className="text-xl text-white">Embark on exciting journeys with our toy cars</p>
-                            </div>
-                        </div>
-                    </div>
+        <div className="relative">
+            <img src="https://img.freepik.com/free-photo/business-planning-concept-side-view-forklift-truck-stacking-wooden-blocks_176474-9256.jpg?w=740&t=st=1684449226~exp=1684449826~hmac=61818fef8f2d69f7574a5f4c2601be5486369d8d3b8f9581b202620c762aa9a1" alt="Banner" className="w-full h-screen" />
+            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-black to-transparent">
+                <div className="max-w-lg mx-auto text-center">
+                    <h1 className="text-4xl font-bold text-white leading-tight">
+                        Embark on a <span className="text-blue-500">Toy Car Adventure</span>
+                    </h1>
+                    <p className="text-xl text-white mt-4">Dive into a World Bursting with Toy Car Magic and Uncover a Playground of Endless Fun, Exploration, and the Joy of Unleashing Your Inner Child!</p>
                 </div>
             </div>
-
         </div>
+
+
+
+
     );
 };
 
