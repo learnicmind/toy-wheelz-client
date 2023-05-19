@@ -5,7 +5,7 @@ const Gallery = () => {
     return (
         <div className='my-10 mx-auto md:w-[1300px]'>
                 <div className='text-center mx-auto md:w-full w-[350px]'>
-                    <h2 className='text-3xl font-bold'>Photo Gallery</h2>
+                    <h2 className='text-3xl font-bold'>Toy Wheelz Gallery</h2>
                     <p className=' py-4 text-center '>
                         Welcome to the Toy Wheelz Gallery, where dreams come to life in vibrant colors and captivating designs! Immerse yourself in a world of awe-inspiring toy vehicles that are sure to ignite your imagination. Our gallery showcases an extensive collection of remarkable cars. </p>
                 </div>

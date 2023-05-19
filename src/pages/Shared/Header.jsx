@@ -10,7 +10,7 @@ const Header = () => {
         <li><Link className="text-lg font-bold" >All Toys</Link></li>
         <li><Link className="text-lg font-bold" >My Toys</Link></li>
         <li><Link className="text-lg font-bold" >Add a Toy</Link></li>
-        <li><Link className="text-lg font-bold" >Blogs</Link></li>
+        <li><Link to='/blogs' className="text-lg font-bold" >Blogs</Link></li>
         </>
 
     return (
