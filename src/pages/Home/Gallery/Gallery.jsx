@@ -61,13 +61,13 @@ const Gallery = () => {
                             </div>
                     </div>
 
-                        <div class="overflow-hidden mx-auto w-[300px] md:w-full relative cursor-pointer">
-                            <img class="object-cover w-full h-56 md:h-64 rounded" src="https://img.freepik.com/free-photo/pink-easter-car-with-red-egg_23-2149301296.jpg" alt="" />
-                            <div class="absolute inset-0 bg-black bg-opacity-75 opacity-0 hover:opacity-100 text-gray-300 text-center pt-10 px-4 rounded">
-                                <p class="text-xl font-bold text-blue-700">ToyWheelz</p>
+                        <div className="overflow-hidden mx-auto w-[300px] md:w-full relative cursor-pointer">
+                            <img className="object-cover w-full h-56 md:h-64 rounded" src="https://img.freepik.com/free-photo/pink-easter-car-with-red-egg_23-2149301296.jpg" alt="" />
+                            <div className="absolute inset-0 bg-black bg-opacity-75 opacity-0 hover:opacity-100 text-gray-300 text-center pt-10 px-4 rounded">
+                                <p className="text-xl font-bold text-blue-700">ToyWheelz</p>
                                 <p>Welcome to the Toy Wheelz Gallery, where dreams come to life in vibrant colors and captivating designs!</p>
-                                <div class="text-lg font-bold flex justify-between items-center p-3">
-                                    <p class="inline-flex items-center gap-2"><svg class="text-blue-700" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 10.54V5h-1a3 3 0 0 0-3 3v3H8V8a3 3 0 0 0-3-3H4v5.54M12 18L2 12l10-6 10 6-10 6z"></path></svg> 375</p>
+                                <div className="text-lg font-bold flex justify-between items-center p-3">
+                                    <p className="inline-flex items-center gap-2"><svg className="text-blue-700" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 10.54V5h-1a3 3 0 0 0-3 3v3H8V8a3 3 0 0 0-3-3H4v5.54M12 18L2 12l10-6 10 6-10 6z"></path></svg> 375</p>
                                     <p>Price: $7</p>
                                 </div>
                             </div>
