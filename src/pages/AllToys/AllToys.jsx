@@ -9,13 +9,13 @@ const AllToys = () => {
     useEffect(() => {
         fetch('http://localhost:5000/alltoys')
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setAlltoys(data))
     }, [])
 
     return (
-        <div className='mx-auto md:w-[1300px]'>
+        <div className='mx-auto md:w-[1300px] my-10'>
             <div className='text-center'>
-                <h1 className='text-4xl font-bold'>All Car Wheelz</h1>
+                <h1 className='text-4xl font-bold'>All Toy Wheelz</h1>
                 <p className='text-lg text-slate-500'>
                 At Car Wheelz, we offer an extensive selection of high-quality wheels from leading brands, ensuring that you'll find the perfect match for your vehicle. Whether you're looking for sleek and sporty designs, rugged off-road wheels, or elegant and luxurious options, we have it all. Our wide range of sizes, finishes, and styles allows you to customize your car's look to suit your personal taste and driving preferences.
                 </p>

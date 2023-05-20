@@ -4,7 +4,7 @@ import { AuthContext } from '../../AuthProvider';
 
 const Login = () => {
 
-    const {signIn, handleGoogleSignIn} = useContext(AuthContext)
+    const { signIn, handleGoogleSignIn } = useContext(AuthContext)
 
     const handleLogin = event => {
         event.preventDefault();
@@ -14,14 +14,14 @@ const Login = () => {
         console.log(email, password)
 
         signIn(email, password)
-        .then(result => {
-            const user = result.user;
-            console.log(user);
-            event.target.reset()
-        })
-        .catch(error => {
-            console.log(error)
-        })
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                event.target.reset()
+            })
+            .catch(error => {
+                console.log(error)
+            })
     }
 
     const handleGoogleIn = () => {
@@ -31,37 +31,35 @@ const Login = () => {
 
 
     return (
-        <div className="hero min-h-screen bg-base-200">
-            <div className="hero-content flex-col lg:flex-row md:gap-40">
+        <div className="hero min-h-screen bg-gradient-to-t from-cyan-100 to-gray-300 flex items-center justify-center">
+            <div className="hero-content flex-col lg:flex-row md:gap-40 ">
                 <div className="relative text-center lg:text-left w-1/2 ">
-                    <div className="bg-gray-200 h-[585px] w-[600px]
-                    rounded-full p-10">
-                        <img
-                            className="mx-auto h-[500px] w-[500px] rounded-full"
-                            src="https://img.freepik.com/free-photo/fun-trex-3d-illustration_183364-81257.jpg?w=740&t=st=1684514562~exp=1684515162~hmac=9889292ceb7944ced55fc7404c20f71b9434ace138eddceab0290775eaba60aa"
-                            alt="Your Image"
-                        />
-                    </div>
+
+                    <img
+                        className="mx-auto h-[500px] w-[500px] rounded-xl"
+                        src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-135.jpg?w=740&t=st=1684610646~exp=1684611246~hmac=c9d43d2f33f1f867f8d5029533ccc772353d234cf2819878adad1100ab96d24a"
+                        alt="Your Image"
+                    />
 
                 </div>
-                <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                    <div className="card-body">
+                <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl">
+                    <div className="card-body bg-transparent">
                         <h1 className="text-3xl text-center font-bold">Login</h1>
                         <form onSubmit={handleLogin}>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input name='email' type="text" placeholder="email" className="input input-bordered" />
+                                <input name='email' required type="text" placeholder="email" className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input name='password' type="password" placeholder="password" className="input input-bordered" />
+                                <input name='password' required type="password" placeholder="password" className="input input-bordered" />
                             </div>
                             <div className="form-control mt-6">
-                                <input className="btn" type="submit" value="Login" />
+                                <input className="btn bg-emerald-500 hover:bg-emerald-600" type="submit" value="Login" />
                             </div>
                         </form>
                         <p className='my-4 font-bold text-center'>New to toy wheelz?<Link className='text-slate-700 underline hover:text-slate-900' to='/register'> Sign Up</Link></p>

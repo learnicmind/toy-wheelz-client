@@ -25,7 +25,7 @@ const ToyTable = ({ alltoy }) => {
                 <td>{available_quantity}</td>
                 <td>{seller_name}</td>
                 <td><button className='bg-[#000C32] w-7 h-7 text-white rounded-full'>X</button></td>
-                <td><Link to={`/toydetail/${_id}`} className='bg-[#000C32] border-2 border-[#000C32] hover:bg-transparent font-bold text-white hover:text-[#000C32]' style={{ transition: '0.3s' }}>View Details</Link></td>
+                <td><Link to={`/toydetail/${_id}`} className='bg-[#000C32] border-2 border-[#000C32] px-2 py-2 rounded hover:bg-transparent font-bold text-white hover:text-[#000C32]' style={{ transition: '0.3s' }}>View Details</Link></td>
             </tr>
         </tbody>
     );
