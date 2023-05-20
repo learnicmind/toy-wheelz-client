@@ -39,9 +39,11 @@ const Header = () => {
                         <div>
                             <Link to='/'><img className='w-14 h-14' src={logo} alt="" /></Link>
                         </div>
-                        <button className="btn btn-ghost normal-case ">
-                            <span className='md:text-4xl text-gray-200 mr-[2px]'>Toy </span> <span className="text-2xl md:text-3xl text-gray-300"> Wheelz</span>
-                        </button>
+                        <Link to='/'>
+                            <button className="btn btn-ghost normal-case ">
+                                <span className='md:text-4xl text-gray-200 mr-[2px]'>Toy </span> <span className="text-2xl md:text-3xl text-gray-300"> Wheelz</span>
+                            </button>
+                        </Link>
 
                     </div>
                     <div className="navbar-center text-white hidden lg:flex">
@@ -51,7 +53,7 @@ const Header = () => {
                     </div>
                     <div className="navbar-end flex items-center gap-2">
                         {user && <img title={user?.displayName} className="w-10 rounded-full" src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=740&t=st=1684436550~exp=1684437150~hmac=2dde41d83a7c88b827e4d287b54cb75a292f4c2c894a0339ea2762cbc4244922" />
-                            }
+                        }
                         {user ?
                             <button onClick={handleLogOut} className="btn bg-slate-950">Logout</button>
                             :

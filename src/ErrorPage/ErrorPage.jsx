@@ -5,7 +5,7 @@ const ErrorPage = () => {
     return (
         <div className='p-10 bg-slate-300'>
             <div>
-                <img className='h-[500px] w-full rounded-lg' src="https://cdn.dribbble.com/users/1291613/screenshots/3191420/monsters_404_800x600.png" alt="" />
+                <img className='h-[500px] w-full rounded-lg' src="https://freefrontend.com/assets/img/html-funny-404-pages/HTML-404-Error-Page.gif" alt="" />
             </div>
             <div className='flex justify-center items-center mt-4'>
                 <Link to='/'><button className="btn btn-error">Back to Home</button></Link>

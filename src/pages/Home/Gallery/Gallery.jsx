@@ -1,4 +1,4 @@
-import { FaReact, FaRegThumbsUp } from 'react-icons/fa';
+import { FaArrowRight, FaReact, FaRegThumbsUp } from 'react-icons/fa';
 import React from 'react';
 
 const Gallery = () => {
@@ -7,7 +7,7 @@ const Gallery = () => {
                 <div className='text-center mx-auto md:w-full w-[350px]'>
                     <h2 className='text-3xl font-bold'>Toy Wheelz Gallery</h2>
                     <p className=' py-4 text-center '>
-                        Welcome to the Toy Wheelz Gallery, where dreams come to life in vibrant colors and captivating designs! Immerse yourself in a world of awe-inspiring toy vehicles that are sure to ignite your imagination. Our gallery showcases an extensive collection of remarkable cars. </p>
+                        Welcome to the Toy Wheelz Gallery, where dreams come to life in vibrant colors and captivating designs! <br /> Immerse yourself in a world of awe-inspiring toy vehicles that are sure to ignite your imagination. <br /> Our gallery showcases an extensive collection of remarkable cars. </p>
                 </div>
 
                 <div className='grid grid-cols md:grid-cols-3 gap-4 mt-6'>
@@ -85,6 +85,45 @@ const Gallery = () => {
                             </div>
                     </div>
 
+                        <div className='overflow-hidden mx-auto w-[300px] md:w-full relative cursor-pointer'>
+                            <img className='object-cover h-56 md:h-64 rounded' src="https://img.freepik.com/free-photo/green-easter-car-with-eggs-copy-space_23-2149301298.jpg?size=626&ext=jpg&ga=GA1.1.1458484269.1673886849&semt=ais" alt="" />
+                            <div className='absolute inset-0 bg-black bg-opacity-75  opacity-0 hover:opacity-100 text-gray-300 text-center pt-10 px-4 rounded'>
+                                <p className='text-xl font-bold text-blue-700'>ToyWheelz</p>
+                                <p>Welcome to the Toy Wheelz Gallery, where dreams come to life in vibrant colors and captivating designs!</p>
+                                <div className='text-lg font-bold flex justify-between items-center p-3'>
+                                    <p className='inline-flex items-center gap-2'><FaRegThumbsUp className='text-blue-700' /> 645</p>
+                                    <p>Price: $9</p>
+                                </div>
+                            </div>
+                    </div>
+
+                        <div className='overflow-hidden mx-auto w-[300px] md:w-full relative cursor-pointer'>
+                            <img className='object-cover h-56 md:h-64 rounded' src="https://img.freepik.com/free-photo/pink-easter-car-with-pink-egg-green-ribbon_23-2149301321.jpg?size=626&ext=jpg" alt="" />
+                            <div className='absolute inset-0 bg-black bg-opacity-75  opacity-0 hover:opacity-100 text-gray-300 text-center pt-10 px-4 rounded'>
+                                <p className='text-xl font-bold text-blue-700'>ToyWheelz</p>
+                                <p>Welcome to the Toy Wheelz Gallery, where dreams come to life in vibrant colors and captivating designs!</p>
+                                <div className='text-lg font-bold flex justify-between items-center p-3'>
+                                    <p className='inline-flex items-center gap-2'><FaRegThumbsUp className='text-blue-700' /> 645</p>
+                                    <p>Price: $9</p>
+                                </div>
+                            </div>
+                    </div>
+
+                        <div className='overflow-hidden mx-auto w-[300px] md:w-full relative cursor-pointer'>
+                            <img className='object-cover h-56 md:h-64 rounded' src="https://img.freepik.com/free-photo/pink-easter-car-with-pink-egg_23-2149301322.jpg?size=626&ext=jpg" alt="" />
+                            <div className='absolute inset-0 bg-black bg-opacity-75  opacity-0 hover:opacity-100 text-gray-300 text-center pt-10 px-4 rounded'>
+                                <p className='text-xl font-bold text-blue-700'>ToyWheelz</p>
+                                <p>Welcome to the Toy Wheelz Gallery, where dreams come to life in vibrant colors and captivating designs!</p>
+                                <div className='text-lg font-bold flex justify-between items-center p-3'>
+                                    <p className='inline-flex items-center gap-2'><FaRegThumbsUp className='text-blue-700' /> 645</p>
+                                    <p>Price: $9</p>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+                <div className='flex items-center justify-center mt-4'>
+                    <button className='btn border-none bg-blue-700 outline-none hover:bg-blue-600'>Show More <FaArrowRight className='ml-1'></FaArrowRight></button>
                 </div>
         </div>
     );

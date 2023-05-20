@@ -7,9 +7,9 @@ const Footer = () => {
 
     const navItems = <>
         <Link className="font-bold" to='/'>Home</Link>
-        <Link className="font-bold" >All Toys</Link>
-        <Link className="font-bold" >Add a Toy</Link>
-        <Link className="font-bold" >Blogs</Link>
+        <Link className="font-bold" to='/alltoys' >All Toys</Link>
+        <Link className="font-bold" to='/addtoy' >Add a Toy</Link>
+        <Link className="font-bold" to='/blogs' >Blogs</Link>
     </>
 
     return (
