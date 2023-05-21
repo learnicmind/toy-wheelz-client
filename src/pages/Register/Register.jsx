@@ -42,9 +42,9 @@ const Register = () => {
 
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                    <div className="card-body bg-transparent">
+                    <div className="card-body">
                         <h1 className="text-3xl text-center font-bold">Register</h1>
-                        <form onSubmit={handleRegister}>
+                        <form onSubmit={handleRegister} className=' bg-transparent'>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Name</span>
