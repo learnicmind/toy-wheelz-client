@@ -29,21 +29,20 @@ const Register = () => {
 
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-gradient-to-t from-cyan-100 to-gray-300">
             <div className="hero-content flex-col lg:flex-row md:gap-40">
                 <div className="relative text-center lg:text-left w-1/2 ">
-                    <div className="bg-gray-200 h-[585px] w-[600px]
-                    rounded-full p-10">
+                    <div className="p-10">
                         <img
-                            className="mx-auto h-[500px] w-[500px] rounded-full"
-                            src="https://img.freepik.com/premium-photo/funny-illustrated-car-painted-rainbow-colors_183364-23794.jpg?size=626&ext=jpg&ga=GA1.1.1458484269.1673886849&semt=ais"
-                            alt="Your Image"
-                        />
+                        className="mx-auto h-[500px] w-[500px] rounded-xl"
+                        src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-135.jpg?w=740&t=st=1684610646~exp=1684611246~hmac=c9d43d2f33f1f867f8d5029533ccc772353d234cf2819878adad1100ab96d24a"
+                        alt="Your Image"
+                    />
                     </div>
 
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                    <div className="card-body">
+                    <div className="card-body bg-transparent">
                         <h1 className="text-3xl text-center font-bold">Register</h1>
                         <form onSubmit={handleRegister}>
                             <div className="form-control">
@@ -71,7 +70,7 @@ const Register = () => {
                                 <input name='password' type="password" placeholder="password" className="input input-bordered" />
                             </div>
                             <div className="form-control mt-6">
-                                <input className="btn" type="submit" value="Register" />
+                                <input className="btn bg-emerald-500 hover:bg-emerald-600" type="submit" value="Register" />
                             </div>
                         </form>
                         <p className='my-4 font-bold text-center'>Already have an account?<Link className='text-slate-700 underline hover:text-slate-900' to='/login'> Login</Link></p>
