@@ -13,7 +13,7 @@ const Footer = () => {
     </>
 
     return (
-        <div className='bg-black text-white py-8 '>
+        <div className='bg-black text-white py-8'>
             <footer className="mx-auto md:w-[1300px] footer grid md:p-0 p-4 justify-between items-center ">
                 <div className=''>
                     <img className='w-14 h-14' src={logo} alt="" />

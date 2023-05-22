@@ -11,7 +11,7 @@ const ToyDetail = () => {
 
     return (
         <div className='md:w-9/12 md:mx-auto mx-10'>
-            <div className='grid md:grid-cols-2 gap-8 p-10 my-12 border rounded-lg shadow-xl'>
+            <div className='grid md:grid-cols-2 gap-8 p-10 py-12 border rounded-lg shadow-xl'>
                 <div className='space-y-1'>
                     <img className='h-60' src={toy_img} alt="" />
                     <h1 className="text-2xl font-bold">{toy_name}</h1>

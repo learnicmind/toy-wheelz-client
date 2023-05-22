@@ -2,7 +2,7 @@ import React from 'react';
 
 const DiscoverSec = () => {
     return (
-        <div className='my-10 mx-auto md:w-[1300px]'>
+        <div className='py-10 mx-auto md:w-[1300px]'>
             <section className="bg-blue-500 py-10">
                 <div className="container mx-auto px-4">
                     <h1 className="text-3xl text-white font-bold mb-6">Discover Toy Wheelz</h1>

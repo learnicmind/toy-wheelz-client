@@ -48,7 +48,7 @@ const ToyTable = ({ alltoy }) => {
                     <div className='flex items-center space-x-3'>
                         <div className='avatar'>
                             <div className='mask rounded w-12 h-12'>
-
+                                <img src={toy_img} alt="" />
                             </div>
                         </div>
                     </div>

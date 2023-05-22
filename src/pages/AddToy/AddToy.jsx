@@ -57,10 +57,11 @@ const AddToy = () => {
     }
 
     return (
-        <div className='md:w-9/12 md:mx-auto mx-10'>
+        <div className='bg-slate-300'>
+            <div className='md:w-9/12 md:mx-auto mx-10  pb-6 '>
             <h1 className='text-3xl text-center font-bold pt-8'>Add A Toy</h1>
-            <form onSubmit={handleAddToy} className='mb-20 mt-10 rounded-xl w-full bg-transparent'>
-                <div className='bg-green-400 p-10 md:p-20 space-y-4'>
+            <form onSubmit={handleAddToy} className=' mt-10 rounded-xl w-full '>
+                <div className='bg-gradient-to-t from-cyan-100 to-gray-300 p-10 md:p-20 space-y-4'>
                     <div className='grid md:grid-cols-2 gap-8'>
 
                         <div>
@@ -118,6 +119,7 @@ const AddToy = () => {
                     <p className='text-md'>View<Link className='text-blue-600 underline'>Terms & Conditions</Link></p>
                 </div>
             </form>
+        </div>
         </div>
     );
 };

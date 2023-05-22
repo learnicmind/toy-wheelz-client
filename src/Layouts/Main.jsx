@@ -7,7 +7,9 @@ const Main = () => {
     return (
         <div>
             <Header></Header>
+            <div className='bg-slate-200'>
             <Outlet></Outlet>
+            </div>
             <Footer></Footer>
         </div>
     );

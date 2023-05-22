@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../AuthProvider';
-import MyToy from './MyToys';
 import Swal from 'sweetalert2';
+import MyToy from '../MyToy/MyToy';
 
 const MyToys = () => {
     const { user } = useContext(AuthContext);
@@ -75,6 +75,7 @@ const MyToys = () => {
                     }
                 </table>
             </div>
+            
         </div>
     );
 };
