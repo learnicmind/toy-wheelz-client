@@ -57,7 +57,7 @@ const router = createBrowserRouter([
             {
                 path: '/toydetail/:id',
                 element: <PrivateRoute><ToyDetail></ToyDetail></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/alltoys/${params.id}`)
+                loader: ({params}) => fetch(`https://toy-wheelz-server.vercel.app/alltoys/${params.id}`)
             },
             {
                 path: 'updatetoy',

@@ -11,7 +11,7 @@ const AllToys = () => {
     const [search, setSearch] = useState('');
 
     useEffect(() => {
-        fetch(`http://localhost:5000/alltoys?search=${search}&sort=${asc ? 'asc' : 'desc'}`)
+        fetch(`https://toy-wheelz-server.vercel.app/alltoys?search=${search}&sort=${asc ? 'asc' : 'desc'}`)
             .then(res => res.json())
             .then(data => {
                 setAllToys(data);
@@ -32,8 +32,8 @@ const AllToys = () => {
     return (
         <div className='md:w-9/12 md:mx-auto mx-10 my-16'>
             <div className='text-center'>
-                <h1 className='text-4xl font-bold'>All Disney Toys</h1>
-                <p className='text-lg text-slate-500'>Barbie dolls have been a beloved toy for children around the world for decades. While it is difficult to quantify exactly how much kids love Barbie, it is safe to say that Barbie has had a significant impact and a large fan base.</p>
+                <h1 className='text-4xl font-bold'>All Toy Wheels</h1>
+                <p className='text-lg text-slate-500'>Toy Wheelz have been a beloved toy for children around the world for decades. While it is difficult to quantify exactly how much kids love Barbie, it is safe to say that Barbie has had a significant impact and a large fan base.</p>
             </div>
 
             <div className='my-10 grid gap-5'>
