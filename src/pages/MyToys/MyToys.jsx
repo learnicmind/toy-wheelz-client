@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../AuthProvider';
 import Swal from 'sweetalert2';
 import MyToy from '../MyToy/MyToy';
+import { Helmet } from 'react-helmet';
 
 const MyToys = () => {
     const { user } = useContext(AuthContext);
@@ -52,7 +53,10 @@ const MyToys = () => {
     
 
     return (
-        <div className='md:w-9/12 md:mx-auto mx-10'>
+        <div className='md:w-9/12 md:mx-auto mx-10 py-4 pb-10'>
+            <Helmet>
+                <title>My Toys | Toy Wheelz</title>
+            </Helmet>
             <h1 className='text-3xl text-center font-bold py-5'>You Added : {myToys.length} Toys</h1>
 
             <div className="overflow-x-auto w-full">

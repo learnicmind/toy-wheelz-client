@@ -1,11 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Blogs = () => {
 
 
     return (
+        
         <div className='bg-slate-200 pb-10'>
-
+            <Helmet>
+                <title>Blogs | Toy Wheelz</title>
+            </Helmet>
             <div className='text-center'>
                 <h2 className='text-4xl font-bold py-6'>Blog Page</h2>
             </div>

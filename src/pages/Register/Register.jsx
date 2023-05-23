@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider';
+import { Helmet } from 'react-helmet';
 
 const Register = () => {
 
@@ -30,6 +31,9 @@ const Register = () => {
 
     return (
         <div className="hero min-h-screen bg-gradient-to-t from-cyan-100 to-gray-300">
+            <Helmet>
+                <title>Register | Toy Wheelz</title>
+            </Helmet>
             <div className="hero-content flex-col lg:flex-row md:gap-40">
                 <div className="relative text-center lg:text-left w-1/2 ">
                     <div className="p-10">

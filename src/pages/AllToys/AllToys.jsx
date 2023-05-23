@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import ToyTable from '../ToyTable/ToyTable';
+import { Helmet } from 'react-helmet';
 
 const AllToys = () => {
 
@@ -31,6 +32,9 @@ const AllToys = () => {
 
     return (
         <div className='md:w-9/12 md:mx-auto mx-10 '>
+            <Helmet>
+                <title>All Toys | Toy Wheelz</title>
+            </Helmet>
             <div className='text-center '>
                 <h1 className='text-4xl font-bold'>All Toy Wheels</h1>
                 <p className='text-lg text-slate-500'>Toy Wheelz have been a beloved toy for children around the world for decades. While it is difficult to quantify exactly how much kids love Barbie, it is safe to say that Barbie has had a significant impact and a large fan base.</p>

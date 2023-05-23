@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { FaRegStar, FaStar } from 'react-icons/fa';
 import Rating from 'react-rating';
 import { useLoaderData } from 'react-router-dom';
@@ -11,6 +12,9 @@ const ToyDetail = () => {
 
     return (
         <div className='md:w-9/12 md:mx-auto mx-10'>
+            <Helmet>
+                <title>Toy Details | Toy Wheelz</title>
+            </Helmet>
             <div className='grid md:grid-cols-2 gap-8 p-10 py-12 border rounded-lg shadow-xl'>
                 <div className='space-y-1'>
                     <img className='h-60' src={toy_img} alt="" />

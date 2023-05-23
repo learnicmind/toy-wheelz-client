@@ -63,7 +63,7 @@ const UpdateToy = () => {
     return (
         <div className='md:w-9/12 md:mx-auto mx-10'>
             <Helmet>
-                <title>Update a Toy | ToyLand</title>
+                <title>Update a Toy | Toy Wheelz</title>
             </Helmet>
             <h1 className='text-3xl text-center font-bold pt-8'>Update : {toy_name}</h1>
             <form onSubmit={handleUpdateToy} className='mb-20 mt-10 rounded-xl w-full'>
