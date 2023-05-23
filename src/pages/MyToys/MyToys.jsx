@@ -53,7 +53,7 @@ const MyToys = () => {
 
     return (
         <div className='md:w-9/12 md:mx-auto mx-10'>
-            <h1 className='text-3xl text-center font-bold my-5'>You Added : {myToys.length} Toys</h1>
+            <h1 className='text-3xl text-center font-bold py-5'>You Added : {myToys.length} Toys</h1>
 
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">

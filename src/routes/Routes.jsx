@@ -60,8 +60,9 @@ const router = createBrowserRouter([
                 loader: ({params}) => fetch(`https://toy-wheelz-server.vercel.app/alltoys/${params.id}`)
             },
             {
-                path: 'updatetoy',
-                element: <UpdateToy></UpdateToy>
+                path: '/updatetoy/:id',
+                element: <UpdateToy></UpdateToy>,
+                loader: ({params}) => fetch(`https://toy-wheelz-server.vercel.app/myToys/${params.id}`)
             }
         ]
     }

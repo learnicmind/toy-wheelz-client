@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet';
 
 const UpdateToy = () => {
     const update = useLoaderData();
@@ -37,7 +38,7 @@ const UpdateToy = () => {
         }
         console.log(updateToy);
 
-        fetch(`https://toy-wheelz-server.vercel.app/myToys/${_id}`,{
+        fetch (`https://toy-wheelz-server.vercel.app/myToys/${_id}`,{
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -61,6 +62,9 @@ const UpdateToy = () => {
 
     return (
         <div className='md:w-9/12 md:mx-auto mx-10'>
+            <Helmet>
+                <title>Update a Toy | ToyLand</title>
+            </Helmet>
             <h1 className='text-3xl text-center font-bold pt-8'>Update : {toy_name}</h1>
             <form onSubmit={handleUpdateToy} className='mb-20 mt-10 rounded-xl w-full'>
                 <div className='bg-purple-200 p-10 md:p-20 space-y-4'>
