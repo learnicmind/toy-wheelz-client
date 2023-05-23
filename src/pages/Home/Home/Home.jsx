@@ -4,6 +4,7 @@ import Gallery from '../Gallery/Gallery';
 import DiscoverSec from '../section/DiscoverSec';
 import { Helmet } from 'react-helmet';
 import ReactTab from '../Tab/ReactTab';
+import Shipping from '../Shipping/Shipping';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <ReactTab></ReactTab>
             <Gallery></Gallery>
             <DiscoverSec></DiscoverSec>
+            <Shipping></Shipping>
         </div>
     );
 };
